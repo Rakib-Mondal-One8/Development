@@ -1,0 +1,86 @@
+.box {
+  width: 200px;
+  /* height:400px; */
+  border: 2px solid gray;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.title {
+  display: inline;
+  color: aquamarine;
+  margin: 100px;
+}
+.description {
+  color: rgb(255, 183, 0);
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.all-box {
+  width: 459px;
+  height: 100px;
+  margin-top: 10px;
+}
+.box1 {
+  border: 2px solid orangered;
+  position: relative;
+  background-color: orangered;
+}
+.box2 {
+  border: 2px solid white;
+  position: relative;
+  background-color: aliceblue;
+}
+.box3 {
+  border: 2px solid green;
+  background-color: green;
+}
+.blue {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  border: 1px solid blue;
+  background-color: blue;
+  position: absolute;
+  left: 180px;
+  top: 0px;
+}
+.line1 {
+  height: 200px;
+  width: 300px;
+  border: 1px solid green;
+}
+.line2 {
+  height: 200px;
+  width: 300px;
+  border: 1px solid blue;
+}
+.line-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  border: 1px solid goldenrod;
+  align-items: center;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid red;
+  margin: auto;
+  background-image: url('images/wp9172847-4k-goku-pc-wallpapers.jpg'),linear-gradient(45deg,white,goldenrod);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+}
