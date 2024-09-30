@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>This is Home Page</h1>
+    <h2>{{ Today | date:"D d M Y" }}</h2>
+    <h2>Author : {{ Author }}</h2>
+    <h2>Age : {{ age }}</h2>
+    <h2>list : {{ lst }}</h2>
+
+
+    {#  Conditional Statement  #}
+    {% if age >= 20 %}
+        <h3>You will get driving lisence</h3>
+    {% elif age >= 18 and age <= 19 %}
+        <h3>You will not Get the Lisence in BD . Dont worry your are Indian you will definitely get one here</h3>
+    {% else %}
+        <h3>You are a Child</h3>
+    {% endif %}
+
+
+    <h1>{{ lst|join:"-" }}</h1>
+    <h3>{{ 'Django is amazing why ?? because the DTL are very amazing seems to me.' | truncatechars:25 }}</h3>
+    <h1>{{ val | default:"Empty String"}}</h1>
+
+
+    {#  For Loop  #}
+    {% for i in courses %}
+        <h3>{{ i.id }} {{ i.name }} {{ i.fee }}</h3>
+    {% endfor %}
+</body>
+</html>
