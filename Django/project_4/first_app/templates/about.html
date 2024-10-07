@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    {{ block.super }}
+<h1>This is the Index Page</h1>
+
+
+    <h3>Name {{ name }}</h3>
+    <h3>Email {{ email }}</h3>
+    <h3>Rating {{ select }}</h3>
+
+    <img src="{% static 'images/panda.jpg' %}" alt="Panda">
+{% endblock %}
