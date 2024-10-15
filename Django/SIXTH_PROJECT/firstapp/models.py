@@ -8,3 +8,12 @@ class Student(models.Model):
     father_name = models.CharField(max_length=100,default='Rakib')
     def __str__(self):
         return f"Name : {self.name}  ||  Roll : {self.roll}"
+
+
+class StudentModel(models.Model):
+    roll = models.IntegerField(primary_key=True)
+    name = models.CharField(max_length=100)
+    father_name = models.CharField(max_length=100,default='Rakib')
+    address = models.TextField()
+    def __str__(self):
+        return f"Name : {self.name}  ||  Roll : {self.roll}"
